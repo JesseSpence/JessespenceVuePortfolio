@@ -1,4 +1,4 @@
-# ljma
+# Jesse.S developer portfolio
 
 ## Project setup
 ```
