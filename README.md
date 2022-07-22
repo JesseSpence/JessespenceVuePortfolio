@@ -1,4 +1,4 @@
-# ljma
+# JesseVueProject
 
 ## Project setup
 ```
