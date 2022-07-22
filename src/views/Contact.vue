@@ -6,7 +6,7 @@
          <div class="contactrow p-5 text-center row">
              <div class="col-md-4 col-xs-12">
                 <div class="contact-icon">
-                    <i class="fa-solid fa-envelopes-bulk display-2 mb-3 elcolor"></i>
+                    <i class="fa-solid fa-envelopes-bulk"></i>
                     <h4>call Me On</h4>
                     <p class="text-muted">+27 83 219 0021</p>
                  </div>
@@ -14,7 +14,7 @@
 
              <div class="col-md-4 col-xs-12">
                 <div class="contact-icon">
-                    <i class="fa-solid fa-envelopes-bulk display-2 mb-3 elcolor"></i>
+                    <i class="fa-solid fa-envelopes-bulk"></i>
                     <h4>Home</h4>
                     <p class="text-muted">Cape town, south Africa</p>
                  </div>
@@ -22,7 +22,7 @@
 
              <div class="col-md-4 col-xs-12">
                 <div class="contact-icon">
-                    <i class="fa-solid fa-envelopes-bulk display-2 mb-3 elcolor"></i>
+                    <i class="fa-solid fa-envelopes-bulk"></i>
                     <h4>Email</h4>
                     <p class="text-muted">jesse.2601@gmail.com</p>
                  </div>
@@ -65,7 +65,7 @@
             <div class="row">
                 <div class="form-item col-12">
                    
-                    <button type="submit" class= "btn btn-danger">Send <i class="fa-solid fa-rocket"></i></button>
+                    <button type="submit">Send <i class="fa-solid fa-rocket"></i></button>
                 </div>
             </div>
 
@@ -81,7 +81,17 @@ export default {
 }
 </script>
 <style scoped>
-    /*Footer*/
+.fa-envelopes-bulk{
+    font-size:2.5rem;
+    margin-bottom:5%;
+    color:var(--el-color)
+}
+   button{
+    border-radius: 10%;
+    padding:5px;
+    background-color: var(--el-color);
+    color:var(--text-color)
+   }
 .contact-container{
     margin-top: 80px;
     }

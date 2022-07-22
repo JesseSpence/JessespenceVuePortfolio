@@ -1,4 +1,5 @@
 <template>
+<h1 class="section-heading">Testimonials</h1>
 <div class="Slider">
 	<carousel
 	@nex="nex"

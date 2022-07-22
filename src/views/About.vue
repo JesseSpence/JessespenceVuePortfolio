@@ -2,20 +2,20 @@
 		<section class="my-5" id="about">
     <h1 class="section-heading">About me</h1>
 
-    <h3 class="sub-heading">I am <span class="elcolor">Jesse Spence</span>, an <span class="elcolor">Aspiring Full Stack Developer</span> </h3>
+    <h3 class="sub-heading mb-5">I am <span class="elcolor">Jesse Spence</span>, an <span class="elcolor">Aspiring Full Stack Developer</span> </h3>
 
     <p class="textmute">I have always been an avid gamer, interested in graphic design, music-making and video editing software which developed my interest and passion for the tech world!</p>
     <p class="textmute">I am devoted, motivated and disciplined. I have experience in the job market as well as tertiary education and thus feel mature and ready to commit myself to my career. I am creative, imaginative and generally introverted although I have an open-minded, adventurous and kind personality and enjoy working in a team of positive people. </p>
 
-    <div class="infocontainer container container-fluid">
+    <div class="infocontainer mt-5 container container-fluid">
 
                 <div class="row txtshadow">
                     <div class="col-lg-2 col-md-12 mt-5">
                     <div class="infoitem">
-                        <p class="textclr"><b>Birthday :</b><span class="textmute noshadow">26 Jan 1999</span></p>
+                        <p class="textclr"><b>Birthday:</b><span class="textmute noshadow">26 Jan 1999</span></p>
                     </div>
                     <div class="infoitem">
-                        <p class="textclr"><b>Age :</b><span class="textmute noshadow">23</span></p>
+                        <p class="textclr"><b>Age:</b><span class="textmute noshadow">23</span></p>
                     </div>
                     <div class="infoitem">
                         <p class="textclr"><b>Email:</b><span class="textmute noshadow"> jesse.2601@icloud</span></p>
@@ -72,7 +72,7 @@
     <h1 class="section-heading">Resume</h1>
 
 
-    <div class="row">
+    <div class="rows">
     <div class="col-md-6 col-sm-12">
 		<h3 class="my-3 fw-bold">Education</h3>
         <div class="container resumebox">
@@ -307,29 +307,6 @@
     color: var(--el-color);
     transform:scale(0.8); 
 }
-
-.section-heading {
-	text-shadow: 1px 2px 3px var(--el-color);
-    position: relative;
-}
-.section-heading::before{
-    content: '';
-    background-color:var(--el-color);
-    width: 25px;
-    height: 3px;
-    position: absolute;
-    top:105%;
-    
-}
-.section-heading::after{
-    content: '';
-    background-color:var(--el-color);
-    height: 3px;
-    width: 50px;
-    position: absolute;
-    top: 90%;
-    left: 0;
-	}
    
    
 	

@@ -76,6 +76,28 @@ body::-webkit-scrollbar-thumb {
     margin-left:255px;
     
 }
+.section-heading {
+	text-shadow: 1px 2px 3px var(--el-color);
+    position: relative;
+}
+.section-heading::before{
+    content: '';
+    background-color:var(--el-color);
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    top:105%;
+    
+}
+.section-heading::after{
+    content: '';
+    background-color:var(--el-color);
+    height: 3px;
+    width: 50px;
+    position: absolute;
+    top: 90%;
+    left: 0;
+	}
 
 #menu-btn{
     display: none;

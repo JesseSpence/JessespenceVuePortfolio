@@ -4,32 +4,39 @@
     <!-- button show -->
   <button @click="showPopup = true">choose your colors</button>
 </div>
+
 <!-- overlay -->
   <div class="overlay" v-if="showPopup" @click="showPopup = false"></div>
   
   <!-- modal -->
-  <div class="modals" v-if="showPopup">
-    <button class="close" @click="showPopup = false">x</button>
+  <div v-if="showPopup">
+  <div class="modals" >
+    <button class="close" @click="showPopup = false"> x </button>
     <div class="colors">
+
         <div class="inputs">
             <h5> background : </h5>
 <input type="color" v-model="backgroundColor" @change="changeBackgroundColor()">
 </div>
-<div class="inputs">
-    <h5> Lowlight : </h5>
-<input type="color" v-model="highlightColor" @change="changeHighlightColor()">
-</div>
+
 <div class="inputs">
     <h5> Highlight : </h5>
-<input type="color" v-model="lowlightColor" @change="changeLowlightColor()">
+<input type="color" v-model="highlightColor" @change="changeHighlightColor()">
 </div>
+
 <div class="inputs">
-    <h5> Text : </h5>
+    <h5> Lowlight : </h5>
 <input type="color" v-model="lowlightColor" @change="changeLowlightColor()">
 </div>
+
+<!-- <div class="inputs">
+    <h5> Text color : </h5>
+<input type="color" v-model="lowlightColor" @change="changeLowlightColor()">
+</div> -->
+
 </div>
   </div>
-
+</div>
 <div class="homebox container d-flex flex-column">
     
     <div class="circlecontainer">
@@ -57,8 +64,8 @@ export default {
         return {
             showPopup: false,
             backgroundColor: '#D5BF86',
-            highlightColor: '#8D775F',
-            lowlightColor: '#3F0D12',
+            highlightColor: '#3F0D12',
+            lowlightColor: '#8D775F',
             color: false,
         };
     },
@@ -84,6 +91,12 @@ changeLowlightColor() {
 <style scoped>
 body{
 	text-align:center;
+}
+button{
+    padding:1%;
+    background: var(--el-color);
+    color:var(--text-color);
+
 }
 .color-box{
 position:relative;
@@ -181,13 +194,14 @@ box-shadow: 1px 1px 5px 2px  var(--text-mute);
   background-color: rgba(0, 0, 0, .5);
 }
 
-.modal-vue .modal {
+.modal-vue .modals {
   position: absolute;
+  right:0;
   width: 300px;
   z-index: 10000;
   margin: 0 auto;
   padding: 20px 30px;
-  background-color: #fff;
+  background-color: rgb(107, 13, 13);
 }
 
 .modal-vue .close{
