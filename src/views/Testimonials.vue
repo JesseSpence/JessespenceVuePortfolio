@@ -97,6 +97,8 @@ export default {
 	padding:5%;
 	background: var(--text-mute);
 	text-align: center;
+	box-shadow: 1px 1px 8px 8px  var(--el-color);
+	 animation: shadow linear infinite 2s;
 	border-radius:20%;
 }
 p{position:relative}
@@ -114,7 +116,6 @@ right:10px;
 color:var(--el-color);
 bottom:-15px;
 }
-img{
-	border: 5px solid var(--el-color);
+img{box-shadow: 1px 1px 8px 8px  var(--el-color);
 }
 	</style>

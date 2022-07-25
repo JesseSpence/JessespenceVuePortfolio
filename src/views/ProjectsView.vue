@@ -44,78 +44,31 @@
           <div class="tab-content" id="pills-tabContent">
 
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="projectbox">
-                    <div class="projectbox-inner">
-                        <div class="projectpic">
-                            <img src="https://picsum.photos/id/240/200/300 " alt="">
-                        </div>
-                    </div>
-                    <div class="projectbox-inner my-5">
-                        <img src="https://picsum.photos/id/160/200/300 " alt="Avatar" class="projectpic">
-                        <h3 class="textclr text-center">Calculator</h3>
-                        <div class="promiddle">
-                          <div class="protext"><div class="btn btn-danger"><i class="text-light fa-brands fa-github-alt"></i></div></div>
-                          <div class="protext"><div class="btn btn-danger"><i class="fa-brands fa-chrome"></i></div></div>
-                        </div>
-                      </div>
-                      
-                    <div class="projectbox-inner">
-                        <div class="projectpic">
-                            <img src="https://picsum.photos/id/238/200/300 " alt="">
-                        </div>
-                    </div>
-                </div>
+
+                 <div id="body" class=" d-flex justify-content-around flex-wrap">
+    <div v-for="project of projects" :key="project.title">
+      <div class="project-card mb-5">
+        <div id="projects" class="card col-lg-4" style="width: 290px">
+          <img :src="project.img" />
+          <h5 class="sub-heading mb-3">{{ project.title }}</h5>
+         <p class="card-text">{{ project.description }}</p>
+         <div class="as" >
+           <a :href="project.github"><i class="fa-solid fa-horse-head ps-5"></i> GitHub</a>
+          <a :href="project.netlify"><i class="fa-solid fa-horse-head ps-5"></i> Netlify</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
             </div>
         
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <div class="projectbox">
-                    <div class="projectbox-inner">
-                        <div class="projectpic">
-                            <img src="https://picsum.photos/id/240/200/300 " alt="">
-                        </div>
-                    </div>
-                    <div class="projectbox-inner my-5">
-                        <img src="https://picsum.photos/id/1015/200/300 " alt="Avatar" class="projectpic">
-                        <h3 class="textclr text-center">Holiday-resort</h3>
-                        <div class="promiddle">
-                          <div class="protext"><div class="btn btn-danger"><i class="text-light fa-brands fa-github-alt"></i></div></div>
-                          <div class="protext"><a href="https://github.com/JesseSpence/Calculator"><div class="btn btn-danger"><i class="fa-brands fa-chrome"></i></div> </a></div>
-                          </div>
-                        </div>
-                        
-                      
-                    <div class="projectbox-inner">
-                        <div class="projectpic">
-                            <img src="https://picsum.photos/id/238/200/300 " alt="">
-                        </div>
-                    </div>
-                </div>
+                ..
             </div>
             
 
              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                <div class="projectbox">
-                    <div class="projectbox-inner">
-                        <div class="projectpic">
-                            <img src="https://picsum.photos/id/240/200/300 " alt="">
-                        </div>
-                    </div>
-                    <div class="projectbox-inner my-5">
-                        <img src="https://picsum.photos/id/163/200/300 " alt="Avatar" class="projectpic">
-                        <h3 class="textclr text-center">Resturaunt</h3>
-                        <div class="promiddle">
-                          <div class="protext"><div class="btn btn-danger"><i class="text-light fa-brands fa-github-alt"></i></div></div>
-                          <div class="protext"><div class="btn btn-danger"><i class="fa-brands fa-chrome"></i></div></div>
-                        </div>
-                        </div>
-                      
-                      
-                    <div class="projectbox-inner">
-                        <div class="projectpic">
-                            <img src="https://picsum.photos/id/238/200/300 " alt="">
-                        </div>
-                    </div>
-                </div>
+                ..
             </div>
           </div>
           </div>
@@ -132,45 +85,59 @@ export default {
       projects: [
         {
         'img': 'https://picsum.photos/id/238/200/300 ',
-        'title': 'project',
-        'github': '',
-        'netlify': '',
-        'description': '',
+        'title': 'Calculator',
+        'github': 'https://github.com/JesseSpence/Calculator',
+        'netlify': 'https://rad-piroshki-9acc5b.netlify.app',
+        'description': 'Simple JavaScript Calculator',
       },
        {
         'img': 'https://picsum.photos/id/238/200/300 ',
-        'title': 'project',
-        'github': '',
-        'netlify': '',
-        'description': '',
+        'title': 'More Calculators',
+        'github': 'https://github.com/JesseSpence/More-calculators',
+        'netlify': 'https://shiny-kulfi-edb6be.netlify.app',
+        'description': 'BMI calculator with a temperature convertor using JavaScript',
         },
        {
         'img': 'https://picsum.photos/id/238/200/300 ',
-        'title': 'project',
-        'github': '',
-        'netlify': '',
-        'description': '',
+        'title': 'Resturant company',
+        'github': 'https://github.com/JesseSpence/Delicious-WebDesign',
+        'netlify': 'https://musical-kheer-4ea418.netlify.app',
+        'description': 'A prototype for a resturant website',
         },
        {
         'img': 'https://picsum.photos/id/238/200/300 ',
-        'title': 'project',
-        'github': '',
-        'netlify': '',
-        'description': '',
+        'title': 'Real Estate Company',
+        'github': 'https://github.com/JesseSpence/Real-Estate-Update',
+        'netlify': 'https://profound-figolla-aa3d5c.netlify.app',
+        'description': 'A prototype for a Real-estate website',
         },
        {
         'img': 'https://picsum.photos/id/238/200/300 ',
-        'title': 'project',
-        'github': '',
-        'netlify': '',
-        'description': '',
+        'title': 'Gaming Store',
+        'github': 'https://github.com/JesseSpence/ljmaUpdated',
+        'netlify': 'https://ljma-games-online-store.netlify.app',
+        'description': 'A prototype for a Gamestore Webite',
         },
        {
         'img': 'https://picsum.photos/id/238/200/300 ',
-        'title': 'project',
-        'github': '',
-        'netlify': '',
-        'description': '',
+        'title': 'Holiday Destination',
+        'github': 'github.com/JesseSpence/branchestask',
+        'netlify': 'https://app.netlify.com/sites/lovely-choux-ac0aa1/overview',
+        'description': 'A Little Project learning HTML and CSS',
+        },
+      {
+        'img': 'https://picsum.photos/id/238/200/300 ',
+        'title': 'To-Do list',
+        'github': 'https://github.com/JesseSpence/Bootstrap-practise',
+        'netlify': 'https://sparkling-sunshine-70a2fc.netlify.app',
+        'description': 'A simple to-Do list App',
+        },
+      {
+        'img': 'https://picsum.photos/id/238/200/300 ',
+        'title': 'Basic developer portfolio',
+        'github': 'https://github.com/JesseSpence/Bootstrap-practise',
+        'netlify': 'https://graceful-lebkuchen-0994af.netlify.app',
+        'description': 'A simple to-Do list App',
       },
 ]
     };
@@ -179,6 +146,31 @@ export default {
 </script>
 
 <style scoped>
+#body{
+margin:3%;
+padding:2rem;
+}
+img{
+height:250px;
+}
+.card{
+ background:var(--text-mute);
+ box-shadow: 1px 1px 8px 8px  var(--el-color);
+  animation: shadow linear infinite 2s;
+  height:401px;
+  padding:1.5%;
+ }
+ p{
+  background:rgba(0, 0, 0, 0.093);
+ }
+ .as{
+  position:absolute;
+  bottom:10px;
+ }
+ a{
+  text-decoration:none;
+  color:var(--el-color) !important;
+ }
 .cube { padding-right:100px;
     width: 50px;
     height: 50px;
@@ -292,42 +284,5 @@ export default {
     padding-bottom: 5%;
     max-width:100vw;
  }
- .projectbox{
-    padding:10px;
-    display:flex;
-    flex:wrap;
-    justify-content: space-around;
-}
-.prjectbox-inner{
-    position: relative;
-width:25%
-}
-.projectpic {
-    opacity: 1;
-  display: block;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-.promiddle{
-        transition: .5s ease;
-     opacity: 0; 
-    position: absolute;
-    transform: translate(48%, -200%);
-    text-align: center;
- }
- .projectbox-inner:hover .projectpic{
-    opacity: 0.3;
-  }
-  
-  .projectbox-inner:hover .promiddle{
-    opacity: 1;
-  }
  
-
-.protext {
-    color:--text-color;
-    font-size: 16px;
-    padding: 16px 32px;
- }
-
 </style>

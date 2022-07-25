@@ -154,14 +154,6 @@ h2{
     animation: shadow linear infinite 2s;
     box-shadow: 1px 1px 8px 8px  var(--el-color);
 }
-@keyframes shadow {
-    0%{
-        box-shadow: 1px 1px 8px 8px  var(--el-color); 
-    }
-    50%{
-        box-shadow: 1px 1px 25px 10px  var(--el-color); 
-    }
-}
 
 #home a {
     padding-top: 7px;

@@ -1,17 +1,17 @@
-<template>
+<!-- <template>
   <div class="flex">
-    <div id="body" v-for="product of product" :key="product.id">
+    <div id="body" v-for="project of projects" :key="project.title">
       <div class="everything">
-        <div id="cards" class="card col-lg-4" style="width: 290px">
-          <img v-bind:src="product.image" alt="" />
-          <h5 class="card-title">{{ product.title }}</h5>
-          <p class="card-text">{{ product.description }}</p>
+        <div id="projects" class="card col-lg-4" style="width: 290px">
+          <img v-bind:src="project.image" alt="" />
+          <h5 class="card-title">{{ project.title }}</h5>
+          <p class="card-text">{{ project.description }}</p>
           <p>
             <i class="fa-solid fa-bolt-lightning"></i>
-            {{ product.category }}
+            {{ product.github }}
           </p>
-          <p><i class="fa-solid fa-horse-head"></i> {{ product.company }}</p>
-          <p><i class="fa-solid fa-dollar-sign"></i> {{ product.price }}</p>
+          <p><i class="fa-solid fa-horse-head"></i> {{ product.netlify }}</p>
+          
         </div>
       </div>
       </div>
@@ -133,4 +133,4 @@ option {
 
 
 
-</style>
+</style> -->

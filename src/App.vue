@@ -76,6 +76,15 @@ body::-webkit-scrollbar-thumb {
     margin-left:255px;
     
 }
+@keyframes shadow {
+    0%{
+        box-shadow: 1px 1px 8px 8px  var(--el-color); 
+    }
+    50%{
+        box-shadow: 1px 1px 25px 10px  var(--el-color); 
+    }
+}
+
 .section-heading {
 	text-shadow: 1px 2px 3px var(--el-color);
     position: relative;
@@ -98,6 +107,10 @@ body::-webkit-scrollbar-thumb {
     top: 90%;
     left: 0;
 	}
+  .sub-heading{
+		text-shadow: 1px 2px 3px var(--el-color);
+    margin-top: 2%;
+}
 
 #menu-btn{
     display: none;

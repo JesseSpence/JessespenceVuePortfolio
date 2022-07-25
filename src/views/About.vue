@@ -217,10 +217,6 @@
 	};
 </script>
 <style scoped>
-	.sub-heading{
-		text-shadow: 1px 2px 3px var(--el-color);
-    margin-top: 5%;
-}
 .progress-bar{
     background-color: var(--el-color)!important;
 }
