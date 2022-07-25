@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # JesseVueProject
+=======
+# Jesse.S developer portfolio
+>>>>>>> ce7d17dff9aa909e2af2112ef90667320083ab2f
 
 ## Project setup
 ```
